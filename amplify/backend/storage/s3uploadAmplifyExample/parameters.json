@@ -1,0 +1,13 @@
+{
+    "bucketName": "s3uploadamlifyexample",
+    "authPolicyName": "s3_amplify_d8e0ad49",
+    "unauthPolicyName": "s3_amplify_d8e0ad49",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authPermissions": "rw",
+    "unauthPermissions": "r"
+}

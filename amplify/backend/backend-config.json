@@ -1,0 +1,14 @@
+{
+	"auth": {
+		"cognitoe161dd17": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"storage": {
+		"s3uploadAmplifyExample": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

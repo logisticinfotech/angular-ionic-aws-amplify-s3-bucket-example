@@ -1,0 +1,19 @@
+{
+    "testenv": {
+        "awscloudformation": {
+            "AuthRoleName": "angularionicawsampli-20190326173339-authRole",
+            "UnauthRoleArn": "arn:aws:iam::053853675721:role/angularionicawsampli-20190326173339-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::053853675721:role/angularionicawsampli-20190326173339-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "angularionicawsampli-20190326173339-deployment",
+            "UnauthRoleName": "angularionicawsampli-20190326173339-unauthRole",
+            "StackName": "angularionicawsampli-20190326173339",
+            "StackId": "arn:aws:cloudformation:us-east-1:053853675721:stack/angularionicawsampli-20190326173339/329675e0-4fbf-11e9-87ac-0a545e22b5be"
+        },
+        "categories": {
+            "auth": {
+                "cognitoe161dd17": {}
+            }
+        }
+    }
+}
