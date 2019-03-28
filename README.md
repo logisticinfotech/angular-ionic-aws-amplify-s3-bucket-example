@@ -2,7 +2,8 @@
 angular-ionic-aws-amplify-s3-bucket-example
 
 
-npm install --save aws-amplify
+npm install --save aws-amplify aws-amplify-angular 
+npm i @types/node
 
 amplify init
 

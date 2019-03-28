@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Single-Image-Preview</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let image of imagesList;">
+      <img onerror="this.src='assets/logo.png'"
+        src="{{ (image?.key) ? 'https://s3bucket-uploadtest.s3.amazonaws.com/public/' + image?.key  : 'assets/logo.png'}}">
+      <ion-label>{{image?.key}}</ion-label>
+      <ion-button (click)="onClickViewBtn(image)">View</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

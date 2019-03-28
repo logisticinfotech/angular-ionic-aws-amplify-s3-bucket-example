@@ -1,0 +1,32 @@
+:host {
+    ion-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: 250px;
+            padding: 2px;
+            border: 1px solid black;
+        }
+    }
+
+    .loader {
+        position: absolute;
+        top: 80px;
+        width: 100%;
+
+        round-progress {
+            padding: 5px;
+            background: #808080;
+            border-radius: 4px;
+        }
+
+        ion-label {
+            position: absolute;
+            color: #fff;
+            font-weight: 800;
+        }
+    }
+}

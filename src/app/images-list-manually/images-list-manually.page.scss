@@ -1,0 +1,29 @@
+:host {
+    ion-header {
+        ion-icon {
+            font-size: 30px;
+            margin-right: 5px;
+            color: orange;
+        }
+    }
+
+    ion-list {
+        margin-top: 0px;
+    }
+
+    ion-col {
+        text-align: center;
+        border: 1px solid black;
+
+        img {
+            height: 200px;
+        }
+
+        ion-icon {
+            position: absolute;
+            font-size: 25px;
+            top: 10px;
+            right: 10px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Image-Upload-Manually</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="{{imagePath}}" onerror="this.src='assets/logo.png'">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button shape="round" (click)="openFileForUpload()">Upload Photo
+          <ion-icon slot="start" name="cloud-upload"></ion-icon>
+        </ion-button>
+        <input type="file" id="selecetImage" [hidden]="true" accept="image/*" (change)="webSelectImage($event)" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="loader" *ngIf="isOpenLoader">
+      <ion-col>
+
+        <round-progress [current]="current" [max]="max" [color]="'#f9a200'" [background]="'#eaeaea'" [radius]="40"
+          [stroke]="10" [semicircle]="false" [rounded]="true" [clockwise]="true" [responsive]="false" [duration]="800"
+          [animation]="'easeInOutQuart'" [animationDelay]="0">
+        </round-progress>
+
+        <ion-label>{{current}} %</ion-label>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

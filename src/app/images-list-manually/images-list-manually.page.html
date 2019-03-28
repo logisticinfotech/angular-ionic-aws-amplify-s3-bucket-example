@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Images-List-Manually</ion-title>
+    <ion-buttons slot="end" (click)="onClickRemoveBtn()">
+      <ion-icon name="trash"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-row>
+      <ion-col size="6" *ngFor="let image of imagesList;" (click)="onClickSelectImage(image)">
+        <img onerror="this.src='assets/logo.png'"
+          src="{{'https://s3bucket-uploadtest.s3.amazonaws.com/public/' + image?.key}}">
+        <ion-icon name="checkmark-circle" *ngIf="image?.isSelected"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+
+</ion-content>
